@@ -18,8 +18,7 @@ var input = {
 
 function databot(input, output, context) {
   /* Your databot code here */
-
-
+  
 }
 
 

@@ -15,11 +15,16 @@ module.exports = (function() {
     return `./outputs/${fileName}`;
   }
 
+  var error = function(msg) {
+    console.log(msg);
+  }
+
   function output() {
     this.debug = debug;
     this.progress = progress;
     this.result = result;
     this.getFileStorePath = getFileStorePath;
+    this.error = error;
   }
 
   return output;
