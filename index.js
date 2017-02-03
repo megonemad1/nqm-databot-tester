@@ -1,5 +1,7 @@
 var Output = require("./output");
 var Context = require("./context");
+var _ = require("lodash");
+
 var output = new Output();
 var context = new Context({tdxHost: "https://tdx.nq-m.com"});
 
