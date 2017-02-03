@@ -11,10 +11,15 @@ module.exports = (function() {
     console.log(JSON.stringify(results));
   };
 
+  var getFileStorePath = function(fileName) {
+    return `./outputs/${fileName}`;
+  }
+
   function output() {
     this.debug = debug;
     this.progress = progress;
     this.result = result;
+    this.getFileStorePath = getFileStorePath;
   }
 
   return output;
