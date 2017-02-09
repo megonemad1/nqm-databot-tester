@@ -3,7 +3,11 @@ module.exports = (function() {
   var debug = console.log;
 
   var progress = function(percentage, message) {
-    console.log("%d% - %s", percentage, message);
+    if (message) {
+      console.log("Progress: %d% - %s", percentage, message);
+    } else {
+      console.log("Progress: %d%", percentage);
+    }
   };
 
   var result = function(results) {
