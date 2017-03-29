@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/IGlautier/nqm-databot-tester#readme",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "lodash": "^4.17.4",
-    "nqm-api-tdx": "^0.1.30"
+    "nqm-api-tdx": "^0.1.30",
+    "shortid": "^2.2.8"
   }
 }

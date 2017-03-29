@@ -1,6 +1,7 @@
 module.exports = (function() {
 
   var TDXApi = require("nqm-api-tdx");
+  var Promise = require("bluebird");
 
   var authenticate = function(shareKey, shareSecret, cb) {
     this.tdxApi.authenticate(shareKey, shareSecret, (err) => {
@@ -14,6 +15,7 @@ module.exports = (function() {
 
   function context(config, shareKey, shareSecret) {
     this.tdxApi = new TDXApi(config);
+    this.tdxApi = Promise.promisifyAll(this.tdxApi);
     this.authenticate = authenticate;
   }
 

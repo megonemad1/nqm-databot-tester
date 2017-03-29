@@ -2,6 +2,8 @@ module.exports = (function() {
 
   var debug = console.log;
 
+  var shortid = require("shortid");
+
   var progress = function(percentage, message) {
     if (message) {
       console.log("Progress: %d% - %s", percentage, message);
@@ -17,6 +19,10 @@ module.exports = (function() {
 
   var getFileStorePath = function(fileName) {
     return `./outputs/${fileName}`;
+  }
+
+  var generateFileStorePath = function(extension) {
+    return `./outputs/${shortid.generate()}.${extension}`;
   }
 
   var error = function(msg) {
