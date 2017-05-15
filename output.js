@@ -40,6 +40,7 @@ module.exports = (function() {
     this.progress = progress;
     this.result = result;
     this.getFileStorePath = getFileStorePath;
+    this.generateFileStorePath = generateFileStorePath;
     this.error = error;
   }
 

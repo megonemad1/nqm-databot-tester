@@ -4,22 +4,26 @@ var _ = require("lodash");
 var fs = require("fs");
 
 var output = new Output();
-var context = new Context({tdxHost: "https://tdx.nq-m.com"});
+var context = new Context({tdxHost: "https://tdx.nqminds.com"});
 
 var identity = {
-  key: "",
-  secret: "",
+  key: "ryglygQRRl",
+  secret: "nqmmqn",
 };
 
 var input = {
   /* Your databot inputs here */
-
+  accountsId: "r1g8CEvwyW",
+  mappingId: "HkeLv25NRg",
+  parentLine: 799,
+  period: 2016,
+  projectionId: "SkxJW0bQxb",
+  regionIds: [
+    "E10000014"
+  ],
 };
 
-function databot(input, output, context) {
-  /* Your databot code here */
-  
-}
+const databot = require("./lib/accounts-generator");
 
 
 context.authenticate(identity.key, identity.secret, (authenticated) => {
@@ -29,3 +33,4 @@ context.authenticate(identity.key, identity.secret, (authenticated) => {
     output.debug("Could not authenticate aborting");
   }
 });
+
