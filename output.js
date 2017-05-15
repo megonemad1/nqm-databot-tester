@@ -29,7 +29,13 @@ module.exports = (function() {
     console.log(msg);
   }
 
+  var abort = function(msg) {
+    console.log(msg);
+    process.exit();
+  }
+
   function output() {
+    this.abort = abort;
     this.debug = debug;
     this.progress = progress;
     this.result = result;
