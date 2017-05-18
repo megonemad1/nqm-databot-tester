@@ -7,8 +7,8 @@ var output = new Output();
 var context = new Context({tdxHost: "https://tdx.nqminds.com"});
 
 var identity = {
-  key: "ryglygQRRl",
-  secret: "nqmmqn",
+  key: "",
+  secret: "",
 };
 
 var input = {
