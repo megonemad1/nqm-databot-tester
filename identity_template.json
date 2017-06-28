@@ -1,0 +1,10 @@
+{
+"host":{
+  "tdxHost": ""
+  },
+"auth":{
+  "key": "",
+  "secret": ""
+  }
+}
+

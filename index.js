@@ -6,7 +6,7 @@ if (process.argv.length <= 2) {
 var test_config = {};
 var bot_uri = process.argv[2];
 
-if (bot_uri.indexOf("./") <= -1){
+if (bot_uri.match("/^\.\//")){
    bot_uri = "./"+bot_uri;
 }
 
@@ -15,7 +15,7 @@ if (process.argv.length > 3) {
 
    test_config = require(bot_uri);
    bot_uri = process.argv[3]
-   if (bot_uri.indexOf("./") <= -1){
+   if (bot_uri.match("/^\.\//")){
       bot_uri = "./"+bot_uri;
    }
 }
@@ -35,7 +35,7 @@ var input ={};
 if (test_config.input) {
     var input = test_config.input
 }
-
+console.log(input);
 var output_set ={};
 if (test_config.output) {
     var output_set = test_config.output

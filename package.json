@@ -19,7 +19,15 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "lodash": "^4.17.4",
-    "nqm-api-tdx": "^0.1.30",
+    "nqm-api-tdx": "^0.1.41",
     "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-mocha": "^4.9.0",
+    "eslint-plugin-react": "^6.10.3"
   }
 }
