@@ -1,0 +1,10 @@
+{
+"host":{
+  "tdxHost": "https://tdx.nq-m.com"
+  },
+"auth":{
+  "key": "rJgZvx1xNb",
+  "secret": "12345"
+  }
+}
+

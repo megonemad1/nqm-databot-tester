@@ -6,6 +6,7 @@ module.exports = (function() {
   var authenticate = function(shareKey, shareSecret, cb) {
     this.tdxApi.authenticate(shareKey, shareSecret, (err) => {
       if (err) {
+        console.log(err);
         cb(false);
       } else {
         cb(true);
